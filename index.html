@@ -32,7 +32,7 @@
     }
 
     .main {
-      background-image: url("C:/Users/2320987/Downloads/portopic.jpg");
+      background-image: url("/portopic.jpg");
       background-repeat: round;
       background-size: cover;
       height: 600px;
@@ -214,7 +214,7 @@
     @keyframes progress1 {
 
       to {
-        --progress-value: 75;
+        --progress-value: 67;
       }
     }
 
@@ -235,7 +235,7 @@
     @keyframes progress4 {
 
       to {
-        --progress-value: 75;
+        --progress-value: 83;
       }
     }
 
@@ -254,7 +254,7 @@
 <body>
   <div class="container-fluid main">
     <div class="mypic ">
-      <img src="/user_photo.jpg" alt="mypic">
+      <img src="/myself.png" alt="mypic">
     </div>
     <div>
       <h1 class="myname">Keerti Vishwakarma</h1>
@@ -359,7 +359,7 @@
       </div>
       <div class="row">
         <div class="card col-sm-6">
-          <img class="card-img-top" src="C:\Users\2320987\Downloads\cognizant.jpg">
+          <img class="card-img-top" src="/cognizant.jpg">
 
           <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)">
             <p class="p-2 m-0">
@@ -369,7 +369,7 @@
           </div>
         </div>
         <div class="card col-sm-6">
-          <img class="card-img-top" src="C:\Users\2320987\Downloads\tcs.jpg">
+          <img class="card-img-top" src="/tcs.jpg">
 
 
           <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)">
@@ -475,15 +475,45 @@
 
   </div>
   <div class="row" id="profile-detail">
-    <div class="col-sm-12">
+   <!-- <div class="col-sm-12">-->
       <div class="attribute-head">
         <h1>Profile</h1>
       </div>
+   <!-- </div>-->
+    <div class="row">
+    <div class="col-md-6" style=" padding-left: 400px;">
+      <p>Name</p>
+      <p>Date Of Birth</p>
+      <p>Gender</p>
+      <p>Nationality</p>
+      <p>Marital Status</p>
+      <p>Contact</p>
+      <p>Permanent Address</p>
+    </div>
+    <div class="col-md-1">
+      <p>:</p>
+      <p>:</p>
+      <p>:</p>
+      <p>:</p>
+      <p>:</p>
+      <p>:</p>
+      <p>:</p>
+    </div>
+    <div class="col-md-5">
+      <p>Keerti Vishwakarma</p>
+      <p>04/12/1998</p>
+      <p>Female</p>
+      <p>Indian</p>
+      <p>Single</p>
+      <p>+91 7844865744</p>
+      <p>Lucknow, Uttar Pradesh, India - 226002</p>
     </div>
   </div>
+  </div>
+  
 
   <script>
-    $(document).snowfall({ flakeCount: 100, maxSpeed: 5 });
+  //  $(document).snowfall({ flakeCount: 100, maxSpeed: 5 });
 
     $(".skill-attribute").each(function (i, ele) {
       var mydiv = $(ele);

@@ -29,10 +29,11 @@
       font-family: inherit;
       color: white;
       cursor: default;
+      background: linear-gradient(20deg, rgb(0, 4, 36) 0%, rgb(216 210 222) 35%, rgb(198, 212, 219) 100%);
     }
 
     .main {
-      background-image: url("/portopic.jpg");
+      background-image: url("C:/Users/2320987/Downloads/portopic.jpg");
       background-repeat: round;
       background-size: cover;
       height: 600px;
@@ -96,7 +97,7 @@
     }
 
     .attribute-head {
-      margin-top: 0.5rem;
+      padding-top: 0.5rem;
     }
 
     .card {
@@ -147,7 +148,7 @@
     .grade-card-cover {
       position: relative;
       top: -165px;
-      margin-left: 50px;
+      padding: 0px 30px 0px 30px;
     }
 
     /* progress bar*/
@@ -211,8 +212,8 @@
       animation: progress4 2s 1 forwards;
     }
 
-    @keyframes progress1 {
 
+    @keyframes progress1 {
       to {
         --progress-value: 67;
       }
@@ -248,13 +249,24 @@
     .grade-content {
       padding-left: 10px;
     }
+
+    .main-card {
+      width: auto;
+      margin: 50px 50px 50px 50px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, .5), 0 0 6px rgba(0, 0, 0, .05);
+      border-radius: 4px;
+    }
+    .social-image{
+      width: 20px;
+    padding-bottom: 5px;
+    }
   </style>
 </head>
 
 <body>
   <div class="container-fluid main">
     <div class="mypic ">
-      <img src="/myself.png" alt="mypic">
+      <img src="C:\Users\2320987\Downloads\myself.png" alt="mypic">
     </div>
     <div>
       <h1 class="myname">Keerti Vishwakarma</h1>
@@ -263,11 +275,12 @@
       <i class="fa-solid fa-phone"></i>+91 7844865744
       <span>98.keerti@gmail.com</span>
       <span>linkedin</span>
-      <span>insta</span>
-
+      <a href="https://www.instagram.com/udemy/" target="_blank" rel="noopener">
+        <img src="C:\Users\2320987\Downloads\linkedin-icon-2.svg" class="social-image" alt="Instagram Button">
+      </a>
     </div>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-lg-6">
 
         <div class="attributes">
           <div id="exp">
@@ -285,14 +298,14 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
+      <div class="col-lg-6">
         <div class="row skill-head-row">
-          <div class="col-sm-12 skill-head skills">
+          <div class="col-lg-12 skill-head skills">
             Skills
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6 skills">
+          <div class="col-lg-6 skills">
 
             <div class=" skill-attribute">
               Java
@@ -322,7 +335,7 @@
               Bootstrap
             </div>
           </div>
-          <div class="col-sm-6 skills">
+          <div class="col-lg-6 skills">
             <div class=" skill-attribute">
               Jenkins
             </div>
@@ -352,14 +365,14 @@
       </div>
     </div>
   </div>
-  <div class="row" id="exp-detail">
-    <div class="col-sm-12">
+  <div class="row main-card" id="exp-detail">
+    <div class="col-lg-12">
       <div class="attribute-head">
         <h1>Experience</h1>
       </div>
       <div class="row">
-        <div class="card col-sm-6">
-          <img class="card-img-top" src="/cognizant.jpg">
+        <div class="card col-lg-6">
+          <img class="card-img-top" src="C:\Users\2320987\Downloads\cognizant.jpg">
 
           <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)">
             <p class="p-2 m-0">
@@ -368,8 +381,8 @@
             </p>
           </div>
         </div>
-        <div class="card col-sm-6">
-          <img class="card-img-top" src="/tcs.jpg">
+        <div class="card col-lg-6">
+          <img class="card-img-top" src="C:\Users\2320987\Downloads\tcs.jpg">
 
 
           <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)">
@@ -382,138 +395,137 @@
       </div>
     </div>
   </div>
-  </div>
-  </div>
-  <div class="row" id="qualification-detail">
-    <div class="col-sm-12">
-      <div class="attribute-head">
-        <h1>Qualification</h1>
+  <div class="main-card">
+    <div class="" id="qualification-detail">
+      <div class="">
+        <div class="attribute-head">
+          <h1>Qualification</h1>
+        </div>
       </div>
+    </div>
+    <div class="qual-grades row">
+      <div class="col-lg-3">
+        <div class="grade-card-cover">
+          <div class="card  grade-card">
+            <div class="card-body">
+              <div>10th</div>
+              <div>July 2019 - Dec 2023</div>
+            </div>
+          </div>
+          <div class="grade-summary">
+            <div class="progress-bar prog1">
+            </div>
+            <div class="grade-content">
+              <span>Vishwanath Academy</span>
+              </br>
+              <span>Lucknow, Uttar Pradesh</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="grade-card-cover">
+          <div class="card  grade-card">
+            <div class="card-body">
+              <div>12th</div>
+              <div>July 2019 - Dec 2023</div>
+            </div>
+          </div>
+          <div class="grade-summary">
+            <div class="progress-bar prog2" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            </div>
+            <div class="grade-content">
+              <span>Vishwanath Academy</span>
+              </br>
+              <span>Lucknow, Uttar Pradesh</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="grade-card-cover">
+          <div class="card  grade-card">
+            <div class="card-body">
+              <div>Under Graduation</div>
+              <div>B.C.A.</div>
+            </div>
+          </div>
+          <div class="grade-summary">
+            <div class="progress-bar prog3" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            </div>
+            <div class="grade-content">
+              <span>University Of Lucknow</span>
+              </br>
+              <span>Lucknow, Uttar Pradesh</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="grade-card-cover">
+          <div class="card  grade-card">
+            <div class="card-body">
+              <div>Post Graduation</div>
+              <div>M.C.A.</div>
+            </div>
+          </div>
+          <div class="grade-summary">
+            <div class="progress-bar prog4" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            </div>
+            <div class="grade-content">
+              <span>SASTRA</span>
+              </br>
+              <span>Thanjavur, Tamil Nadu</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-  <div class="qual-grades row">
-    <div class="col-sm-3">
-      <div class="grade-card-cover">
-        <div class="card  grade-card">
-          <div class="card-body">
-            <div>10th</div>
-            <div>July 2019 - Dec 2023</div>
-          </div>
-        </div>
-        <div class="grade-summary">
-          <div class="progress-bar prog1" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-          </div>
-          <div class="grade-content">
-            <span>Vishwanath Academy</span>
-            </br>
-            <span>Lucknow, Uttar Pradesh</span>
-          </div>
-        </div>
-      </div>
+  <div class="row main-card" id="profile-detail">
+    <!-- <div class="col-lg-12">-->
+    <div class="attribute-head">
+      <h1>Profile</h1>
     </div>
-
-    <div class="col-sm-3">
-      <div class="grade-card-cover">
-        <div class="card  grade-card">
-          <div class="card-body">
-            <div>12th</div>
-            <div>July 2019 - Dec 2023</div>
-          </div>
-        </div>
-        <div class="grade-summary">
-          <div class="progress-bar prog2" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-          </div>
-          <div class="grade-content">
-            <span>Vishwanath Academy</span>
-            </br>
-            <span>Lucknow, Uttar Pradesh</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-3">
-      <div class="grade-card-cover">
-        <div class="card  grade-card">
-          <div class="card-body">
-            <div>Under Graduation</div>
-            <div>B.C.A.</div>
-          </div>
-        </div>
-        <div class="grade-summary">
-          <div class="progress-bar prog3" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-          </div>
-          <div class="grade-content">
-            <span>University Of Lucknow</span>
-            </br>
-            <span>Lucknow, Uttar Pradesh</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-3">
-      <div class="grade-card-cover">
-        <div class="card  grade-card">
-          <div class="card-body">
-            <div>Post Graduation</div>
-            <div>M.C.A.</div>
-          </div>
-        </div>
-        <div class="grade-summary">
-          <div class="progress-bar prog4" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-          </div>
-          <div class="grade-content">
-            <span>SASTRA</span>
-            </br>
-            <span>Thanjavur, Tamil Nadu</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-  </div>
-  <div class="row" id="profile-detail">
-   <!-- <div class="col-sm-12">-->
-      <div class="attribute-head">
-        <h1>Profile</h1>
-      </div>
-   <!-- </div>-->
+    <!-- </div>-->
     <div class="row">
-    <div class="col-md-6" style=" padding-left: 400px;">
-      <p>Name</p>
-      <p>Date Of Birth</p>
-      <p>Gender</p>
-      <p>Nationality</p>
-      <p>Marital Status</p>
-      <p>Contact</p>
-      <p>Permanent Address</p>
-    </div>
-    <div class="col-md-1">
-      <p>:</p>
-      <p>:</p>
-      <p>:</p>
-      <p>:</p>
-      <p>:</p>
-      <p>:</p>
-      <p>:</p>
-    </div>
-    <div class="col-md-5">
-      <p>Keerti Vishwakarma</p>
-      <p>04/12/1998</p>
-      <p>Female</p>
-      <p>Indian</p>
-      <p>Single</p>
-      <p>+91 7844865744</p>
-      <p>Lucknow, Uttar Pradesh, India - 226002</p>
+      <div class="col-lg-6" style=" padding-left: 400px;">
+        <p>Name</p>
+        <p>Date Of Birth</p>
+        <p>Gender</p>
+        <p>Nationality</p>
+        <p>Marital Status</p>
+        <p>Contact</p>
+        <p>Permanent Address</p>
+      </div>
+      <div class="col-lg-1">
+        <p>:</p>
+        <p>:</p>
+        <p>:</p>
+        <p>:</p>
+        <p>:</p>
+        <p>:</p>
+        <p>:</p>
+      </div>
+      <div class="col-lg-5">
+        <p>Keerti Vishwakarma</p>
+        <p>04/12/1998</p>
+        <p>Female</p>
+        <p>Indian</p>
+        <p>Single</p>
+        <p>+91 7844865744</p>
+        <p>Lucknow, Uttar Pradesh, India - 226002</p>
+      </div>
     </div>
   </div>
-  </div>
-  
+
 
   <script>
-  //  $(document).snowfall({ flakeCount: 100, maxSpeed: 5 });
+    //  $(document).snowfall({ flakeCount: 100, maxSpeed: 5 });
 
     $(".skill-attribute").each(function (i, ele) {
       var mydiv = $(ele);

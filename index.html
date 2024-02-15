@@ -292,21 +292,100 @@
     .exp-card {
       height: 250px;
       margin: 50px 100px 0px 100px;
-      width:100%;
-     /* margin: 50px 200px 0px 200px;*/
+      width: 100%;
+      /* margin: 50px 200px 0px 200px;*/
     }
 
     /* mobile landscape*/
     @media (min-width:900px) and (max-width: 960px) {
-      
+
       .skills.right {
         left: 190px;
       }
+
       .skills.left {
         left: -30px;
       }
     }
+
     /* mobile landscape end */
+    /* media query for mobile starts */
+    @media (max-width: 640px) {
+      .attributes span {
+        display: none;
+      }
+
+      #exp-detail {
+        display: none;
+      }
+
+      .main>.left {
+        display: flex;
+      }
+
+      .attributes {
+        font-size: 20px;
+        margin: 20px 20px 20px 20px;
+        width: 100%;
+      }
+
+      .split {
+        height: auto;
+        width: auto;
+        position: relative;
+      }
+
+      .skills {
+        padding-top: 10px;
+      }
+
+      .skill-attribute {
+        min-width: 140px;
+        font: 13px;
+      }
+
+      .skills-grp {
+        display: flex;
+      }
+
+      .myname {
+        font-size: 35px;
+      }
+
+      .mypic img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .qual-grades {
+        display: inherit;
+        height: auto;
+      }
+
+      .grade-card-cover {
+        height: auto;
+        width: auto;
+        padding: 0px 33px 0px 33px;
+      }
+
+      .grade-card {
+        height: 100px;
+      }
+
+      #qualification-detail {
+        height: auto;
+        margin-bottom: 200px;
+      }
+
+      #qualification-detail .attribute-head {
+        padding-bottom: 0.5rem;
+
+      }
+
+      #profile-detail p span {
+        padding-left: 20px;
+      }
+    }
 
     /* media query for tablet starts */
     @media (min-width:641px) and (max-width: 900px) {
@@ -318,17 +397,21 @@
       .skills.right {
         left: 144px;
       }
+
       .progress-bar {
-      width: auto;
+        width: auto;
       }
+
       .grade-card {
         font-size: 17px;
       }
-      .grade-card-cover{
+
+      .grade-card-cover {
         padding: 0px 25px 0px 25px;
         min-width: 114px;
       }
-      .exp-card{
+
+      .exp-card {
         margin: 40px;
       }
 
@@ -359,17 +442,17 @@
 
       <div class="attributes">
         <div id="exp">
-          * Experience
+          <span>*</span> Experience
         </div>
       </div>
       <div class="attributes">
         <div id="qual">
-          * Qualification
+          <span>*</span> Qualification
         </div>
       </div>
       <div class="attributes">
         <div id="profile">
-          * Profile
+          <span>*</span> Profile
         </div>
       </div>
     </div>
@@ -379,7 +462,7 @@
           Skills
         </div>
       </div>
-      <div>
+      <div class="skills-grp">
         <div class="split left skills">
 
           <div class=" skill-attribute">
@@ -560,38 +643,20 @@
 
     <div style=" display: flex;justify-content: center;">
       <div>
-        <p>Name</p>
-        <p>Date Of Birth</p>
-        <p>Gender</p>
-        <p>Nationality</p>
-        <p>Marital Status</p>
-        <p>Contact</p>
-        <p>Permanent Address</p>
-      </div>
-      <div style=" padding-left: 100px;">
-        <p>:</p>
-        <p>:</p>
-        <p>:</p>
-        <p>:</p>
-        <p>:</p>
-        <p>:</p>
-        <p>:</p>
-      </div>
-      <div>
-        <p>Keerti Vishwakarma</p>
-        <p>04/12/1998</p>
-        <p>Female</p>
-        <p>Indian</p>
-        <p>Single</p>
-        <p>+91 7844865744</p>
-        <p>Lucknow, Uttar Pradesh, India - 226002</p>
+        <p><span>Name</span><span>:</span><span>Keerti Vishwakarma</span></p>
+        <p><span>Date Of Birth</span><span>:</span><span>04/12/1998</span></p>
+        <p><span>Gender</span><span>:</span><span>Female</span></p>
+        <p><span>Nationality</span><span>:</span><span>Indian</span></p>
+        <p><span>Marital Status</span><span>:</span><span>Single</span></p>
+        <p><span>Contact</span><span>:</span><span>+91 7844865744</span></p>
+        <p><span>Permanent Address</span><span>:</span><span>Lucknow, Uttar Pradesh, India - 226002</span></p>
       </div>
     </div>
   </div>
 
 
   <script>
-     $(document).snowfall({ flakeCount: 100, maxSpeed: 5 });
+       $(document).snowfall({ flakeCount: 100, maxSpeed: 5 });
 
     $(".skill-attribute").each(function (i, ele) {
       var mydiv = $(ele);

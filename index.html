@@ -78,11 +78,12 @@
       top: 0px;
       color: red;
       padding-top: 30px;
+      width:100%;
 
     }
 
     .skill-attribute {
-      position: relative;
+      /* test  position: relative; */
       font-size: 15px;
       color: rgb(34, 2, 25);
       display: none;
@@ -91,7 +92,7 @@
       margin: 10px;
       border-radius: 20px;
       text-align: center;
-      max-width: 200px;
+      /*max-width: 200px;*/
     }
 
     #exp-detail {
@@ -295,7 +296,8 @@
       width: 100%;
       /* margin: 50px 200px 0px 200px;*/
     }
-     #profile-detail p span {
+    
+    #profile-detail p span {
         padding-left: 20px;
       }
 
@@ -313,7 +315,7 @@
 
     /* mobile landscape end */
     /* media query for mobile starts */
-    @media (max-width: 640px) {
+    @media   (max-width: 640px) {
       .attributes span {
         display: none;
       }
@@ -343,8 +345,8 @@
       }
 
       .skill-attribute {
-        min-width: 140px;
-        font: 13px;
+       /* min-width: 140px;*/
+        font-size: 13px;
       }
 
       .skills-grp {
@@ -384,8 +386,9 @@
         padding-bottom: 0.5rem;
 
       }
+
     }
-       @media (max-width: 320px){ 
+    @media (max-width: 320px){ 
       .attributes{
       margin: 5px 5px 5px 5px;
       }
@@ -398,7 +401,7 @@
         left: -38px;
       }
       .skill-attribute {
-        min-width: 125px;
+       /* min-width: 125px;*/
       }
 }
 
@@ -452,8 +455,8 @@
         <img src="\linkedin-icon-2.svg" class="social-image" alt="Instagram Button">
       </a>-->
     </div>
-
-    <div class="split left">
+<div style="display:flex">
+    <div style="width:100%">
 
       <div class="attributes">
         <div id="exp">
@@ -471,14 +474,14 @@
         </div>
       </div>
     </div>
-    <div class="split right">
+    <div style="width:100%">
       <div class="skill-head-row">
-        <div class="col-lg-12 skill-head">
+        <div class=" skill-head">
           Skills
         </div>
       </div>
-      <div class="skills-grp">
-        <div class="split left skills">
+      <div class="skills-grp" style="display: flex;">
+        <div class="skills">
 
           <div class=" skill-attribute">
             Java
@@ -508,7 +511,7 @@
             Bootstrap
           </div>
         </div>
-        <div class="split right skills">
+        <div class=" skills">
           <div class=" skill-attribute">
             Jenkins
           </div>
@@ -536,7 +539,7 @@
         </div>
       </div>
     </div>
-
+</div>
   </div>
   <div class="main-card" id="exp-detail">
     <div>
